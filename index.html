@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio-personal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  </head>
+  <body>
+    <div class="background-image"></div>
+    <div id="particles-js"></div>
+    <header class="hero">
+      <nav class="nav">
+        <span class="logo">MyPortafolio</span>
+        <button class="nav-toggle" aria-label="Abrir menú">
+          <span class="hamburger-line line-1"></span>
+          <span class="hamburger-line line-2"></span>
+          <span class="hamburger-line line-3"></span>
+        </button>
+        <ul>
+          <li><a href="#Sobre-mi">Sobre mi</a></li>
+          <li><a href="#Portafolio">Portafolio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="contacto">
+          <a href="#">Contáctame</a>
+        </div>
+      </nav>
+      <div class="contenido-hero">
+        <div class="texto-hero">
+          <h1>Hola mi nombre es <br />Alejandro Reyes</h1>
+          <p>
+            Soy diseñador Web Jr y editor audiovisual y fotógrafo, actualmente
+            aprendiendo a programar en JavaScript. Me encanta el mundo de la
+            programación, el diseño y la fotografía el mundo de tecnología 
+            es mi mayor pasión.
+          </p>
+          <div class="botones-hero">
+            <button class="btn-neon">DESCARGAR CV</button>
+            <button class="btn-explorar">Explorar mis proyectos</button>
+          </div>
+        </div>
+        <div class="mi-foto">
+          <div class="profile-card">
+            <img
+              src="img/WhatsApp Image 2025-03-14 at 18.20.33.jpeg"
+              alt="Alejandro Reyes"
+              class="foto-perfil"
+            />
+            <div class="profile-info">
+              <h3>Alejandro Reyes</h3>
+              <p>Diseñador Web Jr & Editor Audiovisual</p>
+              <div class="social-links">
+                <a
+                  href="https://wa.me/50375860409"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/its_ryezx?igsh=MW8zbDRkcW1xZnJmNg=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  href="https://x.com/alejand23912014?s=21&t=oDsu_oOhtwhslZgvp9sFuA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Íconos flotantes ahora dentro de .mi-foto con 10 en total -->
+          <div class="floating-icons">
+            <img src="img/2920244.png" alt="Code" class="floating-icon" />
+            <img src="img/6744480.png" alt="Coffee" class="floating-icon" />
+            <img src="img/610021.png" alt="Computer" class="floating-icon" />
+            <img src="img/1339268.png" alt="Camera" class="floating-icon" />
+            <img src="img/5968242.png" alt="Microphone" class="floating-icon" />
+            <img src="img/1296738.png" alt="Pencil" class="floating-icon" />
+            <img
+              src="img/6024bc5746d7436c727825dc4fc23c22-icono-de-lenguaje-de-programacion-html.png.webp"
+              alt="Monitor"
+              class="floating-icon"
+            />
+            <img
+              src="img/a5a33bf3004830a2bd581e9fa65de660-icono-del-lenguaje-de-programacion-javascript.png.webp"
+              alt="Gear"
+              class="floating-icon"
+            />
+            <img
+              src="img/github-icon-2.svg"
+              alt="Headphones"
+              class="floating-icon"
+            />
+            <!-- Nuevo ícono arriba -->
+            <img
+              src="img/figma_logo_icon_147289.webp"
+              alt="Book"
+              class="floating-icon"
+            />
+            <!-- Nuevo ícono abajo -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Añadimos contenido adicional para probar el scroll -->
+    <div style="height: 2000px; background: #f0f0f0;"></div>
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 50,
+            density: {
+              enable: true,
+              value_area: 800,
+            },
+          },
+          color: {
+            value: ["#00ffff", "#ff00ff", "#ffff00"],
+          },
+          shape: {
+            type: "circle",
+            stroke: {
+              width: 0,
+              color: "#000000",
+            },
+          },
+          opacity: {
+            value: 0.7,
+            random: true,
+            anim: {
+              enable: true,
+              speed: 1,
+              opacity_min: 0.1,
+              sync: false,
+            },
+          },
+          size: {
+            value: 3,
+            random: true,
+            anim: {
+              enable: false,
+            },
+          },
+          line_linked: {
+            enable: false,
+          },
+          move: {
+            enable: true,
+            speed: 2,
+            direction: "none",
+            random: true,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: {
+              enable: false,
+              rotateX: 600,
+              rotateY: 1200,
+            },
+          },
+        },
+        interactivity: {
+          events: {
+            onhover: {
+              enable: true,
+              mode: "repulse",
+            },
+            onclick: {
+              enable: true,
+              mode: "push",
+            },
+          },
+          modes: {
+            repulse: {
+              distance: 100,
+              duration: 0.4,
+            },
+            push: {
+              particles_nb: 4,
+            },
+          },
+        },
+        retina_detect: true,
+      });
+
+      // Script para el menú hamburguesa
+      const navToggle = document.querySelector('.nav-toggle');
+      const navMenu = document.querySelector('nav.nav ul');
+
+      navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        navToggle.classList.toggle('active');
+      });
+
+      // Script para ocultar el navbar al bajar un 15% de la página
+      let nav = document.querySelector('.nav');
+      let lastScrollTop = 0;
+
+      window.addEventListener('scroll', () => {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        let documentHeight = document.documentElement.scrollHeight;
+        let windowHeight = window.innerHeight;
+        let scrollThreshold = documentHeight * 0.15; // 15% de la altura total del documento
+
+        if (scrollTop > scrollThreshold) {
+          nav.classList.add('hidden');
+        } else {
+          nav.classList.remove('hidden');
+        }
+        lastScrollTop = scrollTop;
+      });
+    </script>
+  </body>
+</html>
